@@ -1,0 +1,28 @@
+/* || USER DEFINED STYLES - MAIN */
+
+main {
+    background-color: #AF735B;
+}
+
+
+/* || USER DEFINED STYLES - MAIN-COMING-SOON */
+
+section.coming-soon img {
+    max-height: 300px;
+}
+.statues-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+section.coming-soon p {
+    display: inline-block;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 0.5em;
+    margin: 0.5em 0 5em 0;
+}
