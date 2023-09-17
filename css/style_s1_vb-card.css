@@ -1,0 +1,62 @@
+.vb-matches-day-group h1 {
+    background-color: #AF735B;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    font-size: 1rem;
+}
+
+.vb-matches-day-group {
+    margin-bottom: 30px;
+}
+
+.vb-match-individual {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    border-bottom-color: burlywood;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding: 20px 0px;
+}
+
+.vb-match-individual-vs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.vb-match-individual-score {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.vb-matches-bytime {
+    background-color: whitesmoke;
+}
+
+.vb-match-individual-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 360px) {
+    .vb-match-individual {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .vb-matches-day-group h1 {
+        font-size: 2rem;
+    }
+    .vb-match-individual {
+        font-size: 1.5rem;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+    .vb-match-individual-1 {
+        text-align: start;
+    }
+}

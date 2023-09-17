@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* || RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+
+/* || GENERAL STYLES */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    text-align: center;
+    background-color: #C4D7B2;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.bg-of-header, .bg-of-hero, main, .bg-of-footer {
+    max-width: 100%;
+    background-color: #3B2A28;
+    color: white;
+    /* border: 2px dashed blue; */
+  } 
+
+header, section, footer {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0.5em;
+    display: flex;
+    flex-flow: column wrap;
+
+    /* border: 2px dashed red; */
+}
+
+section {
+    min-height: 600px;
+}
+main section {
+    padding: 3em 0.5em 0em 0.5em;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+
+
+
+/* || USER DEFINED STYLES - HEADER */
+
+.bg-of-header {
+    position: sticky;
+    top: 0;
+}
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px 15px;
+    font-size: 0.7em;
+}
+
+
+/* || USER DEFINED STYLES - HERO */
+
+.bg-of-hero {
+    background-image: url("../img/hero_img-1366x768.png");
+    background-position: center;
+    background-size: cover;
+}
+.bg-of-hero section {
+    text-align: start;
+    justify-content: flex-end;
+}
+.bg-of-hero ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px 5px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+.bg-of-hero a {
+    background-color: #AF735B;
+    border: 1px solid #AF735B;
+    border-radius: 50px;
+    padding: 0.5em;
+}
+
+
+/* || USER DEFINED STYLES - FOOTER */
+
+.footer-logo-socials, footer hr, footer ul, footer p {
+    width: 80%;
+    margin: auto;
+}
+.footer-logo-socials, footer ul {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo-socials {
+    gap: 50px;
+    align-items: center;
+}
+.footer-logo-socials img {
+    height: 50px;
+}  
+.footer-logo-socials .footer-socials {
+    min-width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+footer ul {
+    gap: 30px 50px;
+    font-size: 0.7em;
+}
+footer p {
+    font-size: 0.5em;
+}
+
+
+/* || USER DEFINED STYLES - MAIN */
+
+main {
+    background-color: white;
+    color: black;
+}
+main section {
+    scroll-margin-block-start: 9rem;
+}
+
+/* || USER DEFINED STYLES - MAIN-ABOUT */
+
+section.about {
+    align-items: center;
+    gap: 20px 120px;
+}
+section.about img {
+    max-width: 100%;
+    margin: auto;
+}
+section.about p {
+    font-size: 0.9em;
+    margin: 0.8em 0;
+}
+
+/* || USER DEFINED STYLES - MAIN-SPONSORS */
+
+section.sponsors {
+    gap: 40px;
+    padding-bottom: 2em;
+    justify-content: center;
+}
+section.sponsors img {
+    max-height: 100px;
+}
+.sponsors-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px 10px;
+}
+
+
+
+
+
+/* || LARGE */
+@media screen and (min-width: 1080px) {
+
+    /* || GENERAL STYLES */
+
+    header, section, footer {
+        padding: 0;
+    }
+    section, .bg-of-hero section {
+        min-height: 700px;
+    }
+
+
+    /* || USER DEFINED STYLES - HERO */
+
+    .bg-of-hero section h2 {
+      margin-right: 2em;
+    }
+    .bg-of-hero {
+      background-position: bottom;
+    }
+  
+
+    /* || USER DEFINED STYLES - FOOTER */
+
+    .footer-logo-socials {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer p {
+        margin-bottom: 4em;
+    }
+
+
+    /* || USER DEFINED STYLES - MAIN-ABOUT */
+
+    section.about {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        text-align: start;
+    }
+
+    /* || USER DEFINED STYLES - MAIN-SPONSORS */
+
+    section.sponsors {
+        min-height: auto;
+    }
+
+  }
+  
