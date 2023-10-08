@@ -1,0 +1,50 @@
+.countdown-timer {
+    font-size: 1rem;
+    background-color: #91785D;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 50px;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 80px 20px 50px 30px;
+    position: relative;
+    top: 50px;
+    width: 100%;
+}
+
+
+
+.deadline {
+    display: flex;
+    align-items: space-between;
+    column-gap: 15px;
+}
+
+.deadline-format div {
+    text-align: center;
+}
+
+.horizontal-line {
+    border-left: 1px solid white;
+}
+
+
+
+/* || LARGE */
+@media screen and (min-width: 800px) {
+    .countdown-timer {
+        flex-direction: row;
+        align-self: center;
+        font-size: 1.5rem;
+    }
+}
+
+/* || FOLD */
+@media screen and (max-width: 359px) {
+    .countdown-timer {
+        font-size: 0.7rem;
+    }
+}

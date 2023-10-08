@@ -7,8 +7,9 @@
     <meta name="author" content="John Benedict">
     <meta name="description" content="The official website of Batang Bagumbong Sports Fest">
     <title>BBSF - Batang Bagumbong Sports Fest</title>
-    <link rel="icon" href="icon.jpg" type="image/x-icon">
+    <link rel="icon" href="img/icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style_timer.css" type="text/css">
     <script src="https://kit.fontawesome.com/90e2f1a3f1.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,13 +18,14 @@
             <h2><a href="index.html">BBSF</a></h2>
             <nav>
                 <ul>
-                    <li><a href="s1_volleyball.html">Volleyball</a></li>
-                    <li><a href="coming_soon.html">Basketball</a></li>
-                    <li><a href="coming_soon.html">Badminton</a></li>
+                    <li><a href="html/s1_volleyball.html">Volleyball</a></li>
+                    <li><a href="html/coming_soon.html">Basketball</a></li>
+                    <li><a href="html/coming_soon.html">Badminton</a></li>
                 </ul>
             </nav>
         </header>
     </div>
+
     <div class="bg-of-hero">
         <section class="hero">
             <h2>BATANG BAGUMBONG SPORTS FEST 2023 |  <span class="nowrap">ITO ANG LIGA</span></h2>
@@ -31,6 +33,50 @@
                 <a href="#sponsors"><li>Learn More</li></a>
                 <a href="#about"><li>About BBSF</li></a>
             </ul>
+
+            <article class="countdown-timer">
+                <h3>BBSF
+                  <span>2025</span> STARTS IN</h3>
+            
+                <div class="deadline"> 
+                  <!-- days -->
+                  <div class="deadline-format">
+                    <div>
+                      <h4 class="days">00</h4>
+                      <span>DAYS</span>
+                    </div>
+                  </div>
+                  <!-- end of item -->
+                  <div class="horizontal-line"></div>
+                  <!-- hours -->
+                  <div class="deadline-format">
+                    <div>
+                      <h4 class="hours">00</h4>
+                      <span>HOURS</span>
+                    </div>
+                  </div>
+                  <!-- end of item -->
+                  <div class="colon">:</div>
+                  <!-- mins -->
+                  <div class="deadline-format">
+                    <div>
+                      <h4 class="mins">00</h4>
+                      <span>MINS</span>
+                    </div>
+                  </div>
+                  <!-- end of item -->
+                  <div class="colon">:</div>
+                  <!-- secs -->
+                  <div class="deadline-format">
+                    <div>
+                      <h4 class="secs">00</h4>
+                      <span>SECS</span>
+                    </div>
+                  </div>
+                  <!-- end of item -->  
+               </div>
+            </article>
+
         </section>
     </div>
     
@@ -90,5 +136,10 @@
             <p>&copy; 2023 Batang Bagumbong Sports Fest. <span class="nowrap">All Rights Reserved.</span></p>
         </footer>
     </div>
+
+
+    <!-- JavaScript -->
+    <script src="js/timer.js"></script>
+
 </body>
 </html>
